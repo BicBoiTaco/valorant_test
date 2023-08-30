@@ -1,17 +1,15 @@
 # Set time
 import time
-# Allow to end script abruptly
-import sys
 
 # Possible 'yes' answers
 yes_array = ["yes", "yeah", "ye", "yea", "y", "sure", "yup"]
 # Possible 'no' answers
-no_array = ["no", "nope", "nah", "n", "na"]
+no_array = ["no", "nope", "nah", "n", "na", "not really"]
 
 # If they fail test
 def failure():
     print(name + " Is a confirmed Valorant player")
-    sys.exit("Failed")
+    exit("Failed")
 
 # Check for yes or no and return Bool
 def yes_or_no(item, yes_array, no_array):
@@ -85,5 +83,5 @@ two_print_outcomes(played_Valorant, "I hope you're being honest with me.")
 is_lying = yes_or_no("Are you lying?: ", yes_array, no_array)
 two_print_outcomes(is_lying, "You better hope you're not.")
 
-print("Well to be honest, thats all I have for now. Thanks for playing my game!")
-sys.exit()
+print("Well to be honest, that's all I have for now. Thanks for playing my game!")
+exit()
